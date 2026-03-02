@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+include ops-audit-schema-v1.json
+include ops-audit-rules-v1.md
+recursive-include test_cases *.json

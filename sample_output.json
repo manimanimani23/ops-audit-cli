@@ -1,0 +1,42 @@
+{
+  "project_id": "demo-a",
+  "date": "2026-02-26",
+  "summary": "再試行率・遅延・エラーのいずれかで悪化兆候あり。即日チューニング推奨。",
+  "risks": [
+    {
+      "level": "warn",
+      "code": "retry_loop_risk",
+      "value": 0.14,
+      "threshold": 0.1
+    },
+    {
+      "level": "warn",
+      "code": "latency_degradation",
+      "value": 3100.0,
+      "threshold": 2500
+    },
+    {
+      "level": "warn",
+      "code": "error_rate_spike",
+      "value": 0.018,
+      "threshold": 0.015
+    },
+    {
+      "level": "info",
+      "code": "notes_alert_keyword",
+      "value": "timeout increase after deploy",
+      "threshold": "n/a"
+    }
+  ],
+  "actions": [
+    "バックオフ設定と最大再試行回数を見直す",
+    "高遅延区間を分離し、入力サイズ上限を設定する",
+    "エラーログを分類し、上位2原因を当日中に封じる",
+    "notes起因の事象を再現し、監視メトリクスに追加する"
+  ],
+  "next_check": {
+    "retry_rate_lte": 0.1,
+    "p95_latency_ms_lte": 2500,
+    "error_rate_lte": 0.015
+  }
+}

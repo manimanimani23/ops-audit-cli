@@ -1,0 +1,10 @@
+{
+  "project_id": "mixed-c",
+  "date": "2026-02-26",
+  "inference_cost_usd": 16.1,
+  "retry_rate": 0.11,
+  "p95_latency_ms": 1800,
+  "error_rate": 0.010,
+  "requests": 900,
+  "notes": "rate limit 429 seen at peak"
+}

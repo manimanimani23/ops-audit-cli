@@ -1,0 +1,10 @@
+{
+  "project_id": "demo-a",
+  "date": "2026-02-26",
+  "inference_cost_usd": 23.4,
+  "retry_rate": 0.14,
+  "p95_latency_ms": 3100,
+  "error_rate": 0.018,
+  "requests": 1890,
+  "notes": "timeout increase after deploy"
+}

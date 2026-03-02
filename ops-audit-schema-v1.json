@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DailyOpsAuditInput",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "project_id",
+    "date",
+    "inference_cost_usd",
+    "retry_rate",
+    "p95_latency_ms",
+    "error_rate"
+  ],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "監査対象プロジェクト識別子"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "集計日 (YYYY-MM-DD)"
+    },
+    "inference_cost_usd": {
+      "type": "number",
+      "minimum": 0,
+      "description": "当日の推論コスト(USD)"
+    },
+    "retry_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "再試行率 (0-1)"
+    },
+    "p95_latency_ms": {
+      "type": "number",
+      "minimum": 0,
+      "description": "P95レイテンシ(ms)"
+    },
+    "error_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "エラー率 (0-1)"
+    },
+    "requests": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "当日リクエスト数(任意)"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 2000,
+      "description": "運用メモ(任意)"
+    }
+  }
+}
