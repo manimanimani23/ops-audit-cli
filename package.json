@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "AI運用ログを日次で監査し、異常検知と翌日アクションを返すCLIツール",
   "main": "ops_audit_cli.py",
+  "bin": {
+    "ops-audit-cli": "ops_audit_cli.py"
+  },
+  "files": [
+    "ops_audit_cli.py",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "QUICKSTART.md"
+  ],
   "scripts": {
-    "test": "python -m pytest tests/",
-    "lint": "flake8 ops_audit_cli.py",
-    "format": "black ops_audit_cli.py"
+    "test": "python ops_audit_cli.py test_case_stable.json output_test.json",
+    "lint": "python -m py_compile ops_audit_cli.py"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/manimanimani23/ops-audit-cli"
+    "url": "git+https://github.com/manimanimani23/ops-audit-cli.git"
   },
   "keywords": [
     "ai",
