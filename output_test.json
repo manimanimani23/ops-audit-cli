@@ -1,0 +1,20 @@
+{
+  "project_id": "test-stable",
+  "date": "2026-03-03",
+  "summary": "全指標正常。運用は安定しています。",
+  "status": "ok",
+  "risks": [],
+  "actions": [
+    "翌日の同時間帯と比較し、トレンドを確認"
+  ],
+  "next_check": {
+    "status": "継続監視"
+  },
+  "input_summary": {
+    "inference_cost_usd": 12.5,
+    "retry_rate": 0.05,
+    "p95_latency_ms": 1200,
+    "error_rate": 0.005,
+    "requests": 1500
+  }
+}

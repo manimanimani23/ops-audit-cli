@@ -1,0 +1,10 @@
+{
+  "project_id": "test-stable",
+  "date": "2026-03-03",
+  "inference_cost_usd": 12.5,
+  "retry_rate": 0.05,
+  "p95_latency_ms": 1200,
+  "error_rate": 0.005,
+  "requests": 1500,
+  "notes": "stable operation"
+}

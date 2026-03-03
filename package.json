@@ -1,0 +1,30 @@
+{
+  "name": "ops-audit-cli",
+  "version": "1.0.0",
+  "description": "AI運用ログを日次で監査し、異常検知と翌日アクションを返すCLIツール",
+  "main": "ops_audit_cli.py",
+  "scripts": {
+    "test": "python -m pytest tests/",
+    "lint": "flake8 ops_audit_cli.py",
+    "format": "black ops_audit_cli.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manimanimani23/ops-audit-cli"
+  },
+  "keywords": [
+    "ai",
+    "ops",
+    "audit",
+    "cli",
+    "monitoring",
+    "agent",
+    "openclaw"
+  ],
+  "author": "AIマニ (@manimanimani23)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manimanimani23/ops-audit-cli/issues"
+  },
+  "homepage": "https://manimanimani23.github.io/ops-audit-cli/"
+}

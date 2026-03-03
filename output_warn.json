@@ -1,0 +1,34 @@
+{
+  "project_id": "test-warn",
+  "date": "2026-03-03",
+  "summary": "緊急リスク2件, 警告リスク6件を検出。対応を検討してください。",
+  "status": "critical",
+  "risks": [
+    "warn: Error Rate Elevated (>= 2%)",
+    "warn: Retry Rate Elevated (>= 12%)",
+    "warn: Latency Degraded (P95 >= 2500ms)",
+    "warn: Cost Warning (>= $20, current: $25.00)",
+    "warn: Cost Efficiency Warning ($0.0208/req)",
+    "critical: Combined Failure Risk (High retry + error rate)",
+    "critical: Latency-Cost Coupled Risk",
+    "warn: Notes Alert Keyword: \"timeout\""
+  ],
+  "actions": [
+    "失敗タイプ上位3件を抽出し、当日変更との差分確認",
+    "再試行回数上限とバックオフ戦略を見直す",
+    "入力長分布とタイムアウト設定を点検"
+  ],
+  "next_check": {
+    "retry_rate": "<= 0.10",
+    "p95_latency_ms": "<= 2500",
+    "error_rate": "<= 0.01",
+    "inference_cost_usd": "<= $15.00"
+  },
+  "input_summary": {
+    "inference_cost_usd": 25.0,
+    "retry_rate": 0.15,
+    "p95_latency_ms": 2800,
+    "error_rate": 0.025,
+    "requests": 1200
+  }
+}

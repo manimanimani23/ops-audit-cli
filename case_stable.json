@@ -1,10 +1,10 @@
 {
-  "project_id": "stable-a",
-  "date": "2026-02-26",
-  "inference_cost_usd": 8.2,
-  "retry_rate": 0.04,
-  "p95_latency_ms": 1200,
-  "error_rate": 0.004,
-  "requests": 2400,
-  "notes": "normal operation"
+  "project_id": "demo-stable",
+  "date": "2026-03-03",
+  "inference_cost_usd": 12.5,
+  "retry_rate": 0.05,
+  "p95_latency_ms": 1800,
+  "error_rate": 0.008,
+  "requests": 1200,
+  "notes": "通常運用"
 }

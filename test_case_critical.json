@@ -1,0 +1,10 @@
+{
+  "project_id": "test-critical",
+  "date": "2026-03-03",
+  "inference_cost_usd": 55.0,
+  "retry_rate": 0.30,
+  "p95_latency_ms": 5500,
+  "error_rate": 0.06,
+  "requests": 800,
+  "notes": "incident: database outage"
+}

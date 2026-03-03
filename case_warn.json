@@ -1,10 +1,10 @@
 {
-  "project_id": "warn-b",
-  "date": "2026-02-26",
-  "inference_cost_usd": 21.7,
-  "retry_rate": 0.13,
-  "p95_latency_ms": 2900,
-  "error_rate": 0.021,
-  "requests": 1800,
-  "notes": "timeout after deploy"
+  "project_id": "demo-warn",
+  "date": "2026-03-03",
+  "inference_cost_usd": 28.0,
+  "retry_rate": 0.18,
+  "p95_latency_ms": 3200,
+  "error_rate": 0.035,
+  "requests": 1500,
+  "notes": "タイムアウト増加 after deploy"
 }
